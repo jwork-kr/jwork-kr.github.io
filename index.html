@@ -22,10 +22,26 @@
     header {
       border-bottom: 1px solid #d0d7de;
       padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .brand {
       font-weight: 600;
       font-size: 15px;
       color: #57606a;
+      text-decoration: none;
     }
+
+    header nav a {
+      color: #0969da;
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 16px;
+    }
+    header nav a:hover { text-decoration: underline; }
+    header nav a.active { color: #24292f; font-weight: 600; }
 
     main {
       flex: 1;
@@ -49,6 +65,19 @@
       color: #24292f;
     }
 
+    .cta {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 8px 16px;
+      background: #0969da;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .cta:hover { background: #0860ca; }
+
     footer {
       border-top: 1px solid #d0d7de;
       padding: 20px 40px;
@@ -58,19 +87,27 @@
     }
 
     @media (max-width: 600px) {
-      header, main, footer { padding-left: 20px; padding-right: 20px; }
-      main { padding-top: 40px; padding-bottom: 40px; }
+      header { padding: 16px 20px; }
+      main { padding: 40px 20px; }
+      footer { padding: 16px 20px; }
       h1 { font-size: 1.6em; }
     }
   </style>
 </head>
 <body>
-  <header>jwork-kr</header>
+  <header>
+    <a href="index.html" class="brand">jwork-kr</a>
+    <nav>
+      <a href="index.html" class="active">홈</a>
+      <a href="board.html">공고</a>
+    </nav>
+  </header>
 
   <main>
     <h1>환영합니다</h1>
     <p>주식회사 제이워크(J-Work Corporation)의 홈페이지입니다.</p>
     <p>현재 홈페이지 제작 중에 있습니다.</p>
+    <a href="board.html" class="cta">공고 게시판 바로가기 →</a>
   </main>
 
   <footer>
