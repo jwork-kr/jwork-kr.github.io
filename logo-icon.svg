@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="jgrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E5BA8"/>
+      <stop offset="100%" stop-color="#0F2E5C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 배경 라운디드 스퀘어 -->
+  <rect x="0" y="0" width="120" height="120" rx="24" fill="url(#jgrad2)"/>
+
+  <!-- J의 상단 가로선 -->
+  <line x1="38" y1="32" x2="86" y2="32" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- J 세로선 + 하단 커브 -->
+  <path d="M 65 32 L 65 72 Q 65 88 50 88 Q 36 88 36 76"
+        fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 미세한 상승 차트선 (우상단 엑센트) -->
+  <path d="M 78 62 L 84 56 L 90 58 L 96 50"
+        fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="96" cy="50" r="3.5" fill="#F59E0B"/>
+</svg>
